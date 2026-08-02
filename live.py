@@ -13,16 +13,16 @@ import urllib.parse
 # ⚙️ SALVADOR YAZILIM KONTROL MERKEZİ ⚙️
 # ==========================================
 
-TELEGRAM_TOKEN = "8999614534:AAFcDigxTM8ck2j_2Gh73n-l_Ysyiz-C9fY"
-ADMIN_CHAT_ID = "1797520280" 
-IZINLI_KULLANICILAR = ["1797520280", "1406338226"]
+TELEGRAM_TOKEN = ""
+ADMIN_CHAT_ID = "" 
+IZINLI_KULLANICILAR = ["", ""]
 
-GEMINI_API_KEY = "AIzaSyDWDMCQ_hNRpJxYLti5caMn8ovMgPhe760"
+GEMINI_API_KEY = ""
 genai.configure(api_key=GEMINI_API_KEY)
 ai_model = genai.GenerativeModel('gemini-2.5-flash')
 
-ALPACA_API_KEY = "PK7PYTIBJLKNGUCXZQ63XGB3SF"
-ALPACA_SECRET_KEY = "2VnQRsfpWygmHMKQe4qgwpjhrE54AZAnsbY7eitBcYG3"
+ALPACA_API_KEY = ""
+ALPACA_SECRET_KEY = ""
 ALPACA_BASE_URL = "https://paper-api.alpaca.markets"
 
 api = tradeapi.REST(ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_BASE_URL, api_version='v2')
