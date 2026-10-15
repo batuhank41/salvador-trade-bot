@@ -22,12 +22,7 @@ An algorithmic, event-driven quantitative trading bot designed for crypto exchan
   - Real-time alerts via Telegram Bot, Discord Webhooks, and structured JSON logs.
   - Backtesting and paper trading simulation modes with detailed metrics.
 
----
 
-## 🏗️ Architecture
-
-├── config/                 # API keys, exchange configuration, and strategy params├── core/│   ├── engine.py           # Main event loop & order dispatcher│   ├── risk_manager.py     # Position sizing, drawdown limiters & SL/TP calculator│   └── order_executor.py   # CCXT / Exchange API order management wrapper├── strategies/│   ├── base_strategy.py    # Abstract strategy class│   ├── price_action.py     # Liquidity sweeps, pinbars & trend shifts│   └── momentum_rsi_macd.py# RSI, MACD & Stochastic signal generator├── data/│   ├── collectors/         # WebSocket / REST historical & real-time data feeds│   └── indicators.py       # TA-Lib / Vectorized technical indicator computations├── utils/│   ├── logger.py           # Structured rotation logger│   └── notifier.py         # Telegram / Discord alert integrations├── tests/                  # Unit and integration tests├── .env.example            # Environment variables template├── requirements.txt        # Python dependencies└── main.py                 # Bot entry point
----
 
 ## 🚀 Getting Started
 
